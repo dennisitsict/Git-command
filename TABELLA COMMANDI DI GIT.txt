@@ -1,0 +1,104 @@
+Comando				Descrizione
+git init 	===	Inizializza un nuovo repository Git locale.
+
+git clone <url>		===	Clona un repository remoto nel tuo sistema locale.
+
+git status	===	Mostra lo stato delle modifiche nel repository.
+
+git add <file>	===	Aggiunge il file specificato all'area di staging.
+
+git add .	===	Aggiunge tutti i file modificati all'area di staging.
+
+git commit -m "messaggio"	===	Esegue il commit delle modifiche nell'area di staging con un messaggio descrittivo.
+
+git push origin <branch>	===	Invia le modifiche dal repository locale al repository remoto.
+
+git pull	===	Recupera e unisce le modifiche dal repository remoto a quello locale.
+
+git branch	===	Mostra un elenco di tutti i branch nel repository.
+
+git branch <nome-branch>	===	Crea un nuovo branch con il nome specificato.
+
+git checkout <branch>	===	Passa al branch specificato.
+
+git checkout -b <nome-branch>	===	Crea e passa a un nuovo branch con il nome specificato.
+
+git merge <branch>	===	Unisce il branch specificato nel branch corrente.
+
+git merge --no-ff <branch>	===	Esegue un merge senza fast-forward.
+
+git merge --squash <branch>	===	Comprime le modifiche del branch specificato in un unico commit.
+
+git merge --abort	===		Annulla un merge in corso e ripristina lo stato precedente.
+
+git log			===	Mostra la cronologia dei commit.
+
+git diff	===	Mostra le differenze tra i file nel working directory e l'area di staging.
+
+git reset --hard <commit>	===	Resetta il repository allo stato specificato dal commit, eliminando le modifiche locali.
+
+git revert <commit>	===	Annulla un commit specifico creando un nuovo commit.
+
+git cherry-pick <commit>	===	Applica un commit specifico da un altro branch.
+
+git pull --rebase	===	Recupera le modifiche dal repository remoto e le reapplica sopra il branch corrente.
+
+git show <commit>	===	Mostra i dettagli di un commit specifico.
+
+git clean -f	===	Rimuove i file non tracciati dalla directory di lavoro.
+
+git config	===	Configura le impostazioni di Git (es. nome utente, email).
+
+git remote -v	===	Mostra gli URL dei repository remoti configurati.
+
+git remote add <nome> <url>	===	Aggiunge un repository remoto con il nome specificato.
+
+git rebase <branch>===		Applica le modifiche del branch specificato sopra il branch corrente.
+
+git tag <nome-tag>	===	Crea un tag con il nome specificato.
+
+git rm <file>	===	Rimuove il file specificato sia dall'area di staging che dal working directory.
+
+git mv <file-old> <file-new>	===	Rinomina un file e lo aggiunge all'area di staging.
+
+git stash	=== 	Salva temporaneamente le modifiche non committate.
+
+git stash save "messaggio" ===	Salva le modifiche non committate con un messaggio descrittivo.
+
+git stash list	=== Mostra l'elenco delle modifiche salvate.
+
+git stash show	===	Mostra i dettagli dell'ultima modifica salvata.
+
+git stash show stash@{n}===	Mostra i dettagli della modifica salvata specificata.
+
+git stash apply	===	Applica l'ultima modifica salvata senza rimuoverla dalla lista di stashes.
+
+git stash apply stash@{n}===	Applica la modifica salvata specificata senza rimuoverla dalla lista di stashes.
+
+git stash pop ===	Applica l'ultima modifica salvata e la rimuove dalla lista di stashes.
+
+git stash pop stash@{n}		===	Applica la modifica salvata specificata e la rimuove dalla lista di stashes.
+
+git stash drop	===	Rimuove l'ultima modifica salvata dalla lista di stashes.
+
+git stash drop stash@{n}	===	Rimuove la modifica salvata specificata dalla lista di stashes.
+
+git stash clear		===	Rimuove tutte le modifiche salvate dalla lista di stashes.
+
+git stash branch <nome-branch>		===	Crea un nuovo branch dalla modifica salvata più recente e applica le modifiche.
+
+git stash branch <nome-branch> stash@{n}	===	Crea un nuovo branch dalla modifica salvata specificata e applica le modifiche.
+
+git stash save --keep-index	===	Salva le modifiche non committate mantenendo l'indice di staging intatto.
+
+git stash save --include-untracked	===	Salva le modifiche non committate includendo anche i file non tracciati.
+
+git stash save --all	===	Salva tutte le modifiche, inclusi i file non tracciati e ignorati.
+
+ssh-keygen	===	Genera una nuova coppia di chiavi SSH.
+
+ssh-add <path>	===	Aggiunge una chiave privata all'agente SSH per l'autenticazione.
+
+ssh -T git@github.com	===	Testa la connessione SSH a GitHub.
+
+ssh-agent -s	===	Avvia l'agente SSH in background.
